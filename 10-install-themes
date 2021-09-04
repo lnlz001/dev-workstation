@@ -21,3 +21,7 @@ git clone https://github.com/vinceliuice/Tela-icon-theme.git /tmp/tela-icon-them
 /tmp/tela-icon-theme/install.sh -a
 
 gsettings set org.gnome.desktop.interface icon-theme 'Tela-grey-dark'
+
+mkdir -p "$HOME/src"
+git clone https://github.com/Mayccoll/Gogh.git "$HOME/src/gogh"
+
