@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [[ -z "$1" ]]; then
+	echo "USAGE: run [init|install-pkgs|setup]"
+	exit 1
+fi
+
+action="$1"
+
+dir=$(dirname $(readlink -f $0))
+
+find $dir -type f -name "*-${action}-*" -exec sudo bash {} \;

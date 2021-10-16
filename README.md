@@ -6,9 +6,11 @@ Installs required drivers and applications for Dell XPS Developer Edition.
 
 ## Quick Start
 
-Run the full provisioning script set with
+Execute a provisioning phase with the `run` script.
+`USAGE:    ./run [init|lang-setup|install-pkgs]`  
+
 ````bash
-./setup
+./run init
 ````
 
 ## Components

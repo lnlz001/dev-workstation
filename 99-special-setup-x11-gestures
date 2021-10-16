@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+set -e
+
+# Install fusuma for handling gestures
+sudo gpasswd -a $USER input
+sudo apt-get install libinput-tools xdotool ruby -y -qq
+sudo gem install --silent fusuma
+
+

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -e
+
+snaps=(discord gimp krita insomnia postman doctl aws-cli jupyter pop-themes lxd) 
+snaps_classic=(ripgrep slack)
+
+for s in "${snaps[@]}"; do
+	sudo snap install $s
+done
+for s in "${snaps_classic[@]}"; do
+	sudo snap install $s --classic
+done
+
+

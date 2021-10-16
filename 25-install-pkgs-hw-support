@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -e
+
+sudo apt-get install -y -qq \
+	git htop lame net-tools flatpak audacity \
+	openssh-server sshfs simplescreenrecorder nano \
+	vlc gthumb gnome-tweaks ubuntu-restricted-extras \
+	thunderbird ffmpeg ufw spell synaptic 
+
+# Install drivers
+sudo apt-get install -y \
+	oem-somerville-melisa-meta \
+	libfprint-2-tod1-goodix \
+	oem-somerville-meta \
+	tlp-config
+
+# Install howdy for camera usage
+sudo add-apt-repository ppa:boltgolt/howdy -y > /dev/null 2>&1
+sudo apt-get update -qq
+sudo apt-get install -y howdy
+
+
