@@ -10,6 +10,6 @@ else
 fi
 
 sh autogen.sh
-./configure
+./configure --prefix=$HOME/.local
 make
-sudo make install
+make install
