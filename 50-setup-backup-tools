@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -e
+
+
+sudo dnf install -y \
+	timeshift \
+	timeshift-autosnap-dnf \
+	grub-btrfs
+
+
+
